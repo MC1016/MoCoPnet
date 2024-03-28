@@ -76,7 +76,7 @@ def train(train_loader, scale_factor):
             }, save_path=opt.save, filename='model' + str(scale_factor) + '_iter' + str(idx_iter+1) + '.pth.tar')
             loss_epoch = []
             psnr_epoch = []
-            valid(net)
+            # valid(net)
 
 def demo_test(net, test_loader, video_name):
     PSNR_list = []
